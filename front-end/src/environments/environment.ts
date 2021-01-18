@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  male_avatar_photo_url: './assets/images/male-user.jpg',
+  female_avatar_photo_url: './assets/images/female-user.jpg',
+  logo: './assets/images/scai-logo.png',
 };
 
 /*
