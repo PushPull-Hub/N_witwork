@@ -9,12 +9,15 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { ProjectDocumentationComponent } from './project-documentation/project-documentation.component';
 import { ProjectFounderComponent } from './project-founder/project-founder.component';
 
-
 @NgModule({
-  declarations: [WelcomePageComponent, SignInComponent, SignUpComponent, ResetPasswordComponent, ProjectDocumentationComponent, ProjectFounderComponent],
-  imports: [
-    CommonModule,
-    UnauthenticatedRoutingModule
-  ]
+  declarations: [
+    WelcomePageComponent,
+    SignInComponent,
+    SignUpComponent,
+    ResetPasswordComponent,
+    ProjectDocumentationComponent,
+    ProjectFounderComponent,
+  ],
+  imports: [CommonModule, UnauthenticatedRoutingModule],
 })
-export class UnauthenticatedModule { }
+export class UnauthenticatedModule {}
