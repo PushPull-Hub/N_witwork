@@ -10,6 +10,7 @@ import { ProjectDocumentationComponent } from './project-documentation/project-d
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { UnauthenticatedWrapperComponent } from './unauthenticated-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     ResetPasswordComponent,
     ProjectDocumentationComponent,
     ProjectFounderComponent,
+    UnauthenticatedWrapperComponent,
   ],
   imports: [CommonModule, UnauthenticatedRoutingModule],
 })
