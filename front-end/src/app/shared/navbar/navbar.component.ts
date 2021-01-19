@@ -7,10 +7,10 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  logo: string;
+  navBarLogo: string;
   constructor() {}
 
   ngOnInit(): void {
-    this.logo = environment.logo;
+    this.navBarLogo = environment.logo;
   }
 }
