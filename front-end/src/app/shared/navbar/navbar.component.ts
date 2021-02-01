@@ -16,6 +16,7 @@ export class NavbarComponent implements OnInit {
   messengerIcon: string;
   friendsIcon: string;
   notificationIcon: string;
+  settingIcon: string;
 
   constructor() {}
 
@@ -25,6 +26,7 @@ export class NavbarComponent implements OnInit {
     this.messengerIcon = environment.iconsFolderPath + '/messenger.svg';
     this.friendsIcon = environment.iconsFolderPath + '/users.svg';
     this.notificationIcon = environment.iconsFolderPath + '/notification.svg';
+    this.settingIcon = environment.iconsFolderPath + '/settings.svg';
     this.loadProfilePicture();
   }
 
