@@ -5,8 +5,53 @@
 .navbar-brand {
   padding: 0;
   margin-left: 1rem;
+  margin-right: 5rem;
 }
 
-.navbar-logo {
+.navbar-brand > img {
   width: 7rem;
+}
+
+.nav-link {
+  padding-left: 2rem;
+}
+
+.nav-item img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.dropdown {
+  padding-right: 1.5rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  padding: 0;
+  margin-top: 0.7rem;
+  min-width: 14rem;
+  left: -62px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.profile-picture {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.user-name {
+  font-style: normal;
+  // font-size: 1.2rem;
+}
+
+.filter-white {
+  filter: invert(98%) sepia(2%) saturate(9%) hue-rotate(55deg) brightness(102%)
+    contrast(105%);
 }

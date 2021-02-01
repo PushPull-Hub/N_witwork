@@ -7,6 +7,7 @@ export const environment = {
   male_avatar_photo_url: './assets/images/male-user.jpg',
   female_avatar_photo_url: './assets/images/female-user.jpg',
   logo: './assets/images/scai-logo.png',
+  iconsFolderPath: './assets/icons',
 };
 
 /*
