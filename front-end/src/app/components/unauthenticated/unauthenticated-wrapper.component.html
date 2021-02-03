@@ -1,2 +1,43 @@
-<!-- <router-outlet></router-outlet> -->
-<h1>Unauthenticated</h1>
+<div fxLayout="column" fxLayoutAlign="start stretch">
+    <div class="scai-backgroung"></div>
+    <div fxLayout="row">
+        <div class="c-links">
+            <li class="m-2 p-2">
+                <a href="">Home</a>
+            </li>
+            <li class="m-2 p-2">
+                <a href="">Project</a>
+            </li>
+            <li class="m-2 p-2">
+                <a href="">Founder</a>
+            </li>
+        </div>
+        <div class="c-icons d-flex">
+            <ul class="d-flex mb-0">
+                <li class="m-2">
+                    <img class="img-icon svg-filter-white" [src]="linkedInIcon">
+                </li>
+                <li class="m-2">
+                    <img class="img-icon svg-filter-white" [src]="gitHubIcon">
+                </li>
+            </ul>
+        </div>
+        <div class="body">
+            <img class="scai-consulting-logo" [src]="scaiConsultingLogo" alt="Scai_Consulting_Logo ">
+        </div>
+        <div class="c-buttons fixit-on-bottom">
+            <ul class="mx-4 my-5 p-0">
+                <li class="m-3">
+                    <a class="my-button" href="">
+                        <p>Sign in</p>
+                    </a>
+                </li>
+                <li class="m-3">
+                    <a class="my-button sign-up-button " href="">
+                        <p>Sign up</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

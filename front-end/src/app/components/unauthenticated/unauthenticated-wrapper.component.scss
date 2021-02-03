@@ -1,0 +1,134 @@
+.scai-backgroung {
+  background-color: #1976d2;
+  background: linear-gradient(145deg, #0d47a1, #42a5f5);
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 75vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: skewY(8deg);
+  transform-origin: 100%;
+  height: 60vh;
+}
+
+.scai-consulting-logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.img-icon {
+  width: 2rem;
+  height: 3rem;
+}
+
+.c-links {
+  display: flex;
+  position: absolute;
+  list-style: none;
+  text-transform: uppercase;
+
+  li a {
+    color: white;
+  }
+}
+
+.c-icons {
+  float: right;
+}
+
+.fixit-on-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.body > img {
+  width: 20rem;
+  height: 20rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  z-index: 1;
+}
+
+.my-button {
+  letter-spacing: 0.03rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  border: none;
+  color: #1976d2;
+  font-weight: 600;
+  line-height: 4rem;
+  background-color: #fff;
+  border-radius: 3rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(10, 16, 20, 0.24), 0 0 2px rgba(10, 16, 20, 0.12);
+  transition: box-shadow 0.6s;
+}
+
+.my-button:hover {
+  background-color: #1976d2;
+  color: #fff;
+  box-shadow: 0 6px 6px rgba(10, 16, 20, 0.15), 0 0 52px rgba(10, 16, 20, 0.12);
+}
+
+@media (max-width: 480px) {
+  .scai-backgroung {
+    transform: unset;
+    transform-origin: unset;
+    height: 55vh;
+  }
+
+  .body > img {
+    width: 100%;
+    height: 40%;
+    transform: translate(-50%, 15%);
+  }
+
+  .my-button {
+    width: 100%;
+  }
+
+  .sign-up-button {
+    background-color: #1976d2;
+    p {
+      color: white;
+    }
+  }
+
+  .fixit-on-bottom {
+    bottom: 9.2rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .c-links {
+    margin-left: 0.7rem;
+  }
+
+  .c-links li a {
+    font-size: 0.9rem;
+  }
+
+  .c-icons {
+    float: none;
+    position: absolute;
+    top: 18.5rem;
+    left: 6rem;
+  }
+
+  .scai-backgroung {
+    height: 45vh;
+  }
+
+  .body > img {
+    height: 30%;
+  }
+}
