@@ -17,3 +17,31 @@
 *:focus {
   outline: none !important;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.svg-filter-white {
+  filter: invert(98%) sepia(2%) saturate(9%) hue-rotate(55deg) brightness(102%)
+    contrast(105%);
+}
