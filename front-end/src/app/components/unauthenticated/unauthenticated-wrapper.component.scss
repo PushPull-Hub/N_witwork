@@ -22,6 +22,11 @@
   height: 3rem;
 }
 
+.svg-color {
+  filter: invert(98%) sepia(2%) saturate(9%) hue-rotate(55deg) brightness(102%)
+    contrast(105%);
+}
+
 .c-links {
   display: flex;
   position: absolute;
@@ -104,13 +109,30 @@
   }
 
   .fixit-on-bottom {
-    bottom: 9.2rem;
+    bottom: 12.2rem;
+  }
+
+  .c-icons > ul {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+  .svg-color {
+    filter: invert(39%) sepia(86%) saturate(820%) hue-rotate(178deg)
+      brightness(85%) contrast(101%);
+  }
+
+  .img-icon {
+    width: 3rem;
+    height: 4rem;
   }
 }
 
 @media (max-width: 280px) {
   .c-links {
-    margin-left: 0.7rem;
+    width: 100%;
+    justify-content: center;
   }
 
   .c-links li a {
@@ -124,11 +146,17 @@
     left: 6rem;
   }
 
+  .c-icons > ul {
+    width: 100%;
+    justify-content: center;
+  }
+
   .scai-backgroung {
     height: 45vh;
   }
 
   .body > img {
-    height: 30%;
+    height: 25%;
+    transform: translate(-50%, 40%);
   }
 }
