@@ -50,3 +50,8 @@ a:hover {
   filter: invert(39%) sepia(86%) saturate(820%) hue-rotate(178deg)
     brightness(85%) contrast(101%);
 }
+
+.unselectable {
+  touch-action: none;
+  user-select: none;
+}

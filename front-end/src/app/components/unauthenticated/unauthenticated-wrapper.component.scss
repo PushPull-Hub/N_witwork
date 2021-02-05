@@ -44,6 +44,7 @@
 
 .c-icons {
   float: right;
+  cursor: pointer;
 }
 
 .fixit-on-bottom {
@@ -61,6 +62,7 @@
   transform: translate(-50%, 0);
   position: absolute;
   z-index: 1;
+  cursor: pointer;
 }
 
 .my-button {
@@ -90,7 +92,7 @@
 
 @media (min-width: 1201px) {
   .scai-backgroung {
-    height: 70vh;
+    height: 80vh;
   }
 
   .body > img {
