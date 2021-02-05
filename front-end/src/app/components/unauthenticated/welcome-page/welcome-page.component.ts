@@ -10,6 +10,8 @@ export class WelcomePageComponent implements OnInit {
   scaiConsultingLogo;
   linkedInIcon: string;
   gitHubIcon: string;
+  linkedInLink: string;
+  gitHubLink: string;
 
   constructor() {}
 
@@ -17,5 +19,7 @@ export class WelcomePageComponent implements OnInit {
     this.scaiConsultingLogo = environment.logo;
     this.linkedInIcon = environment.iconsFolderPath + '/linkedin.svg';
     this.gitHubIcon = environment.iconsFolderPath + '/github.svg';
+    this.gitHubLink = 'https://github.com/PushPull-Hub/Nwitwork';
+    this.linkedInLink = 'https://www.linkedin.com/in/hamza-dahhani-a631141b6/';
   }
 }

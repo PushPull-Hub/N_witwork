@@ -1,22 +1,26 @@
 <div fxLayout="row" class="unselectable">
     <div class="c-links">
         <li class=" p-2">
-            <a href="">Home</a>
+            <a [routerLink]="[ '/welcome-page']">Home</a>
         </li>
         <li class=" p-2">
-            <a href="">Project</a>
+            <a [routerLink]="[ '/documentation']">Project</a>
         </li>
         <li class=" p-2">
-            <a href="">Founder</a>
+            <a [routerLink]="[ '/founder']">Founder</a>
         </li>
     </div>
     <div class="c-icons d-flex">
         <ul class="d-flex mb-0">
             <li class="m-2">
-                <img class="img-icon svg-color" [src]="linkedInIcon">
+                <a [href]="linkedInLink" target="_blank">
+                    <img class="img-icon svg-color" [src]="linkedInIcon">
+                </a>
             </li>
             <li class="m-2">
-                <img class="img-icon svg-color" [src]="gitHubIcon">
+                <a [href]="gitHubLink" target="_blank">
+                    <img class="img-icon svg-color" [src]="gitHubIcon">
+                </a>
             </li>
         </ul>
     </div>
@@ -26,12 +30,12 @@
     <div class="c-buttons fixit-on-bottom">
         <ul class="mx-4 my-5 p-0">
             <li class="m-3">
-                <a class="my-button" href="">
+                <a class="my-button" [routerLink]="['/sign-in']">
                     <p>Sign in</p>
                 </a>
             </li>
             <li class="m-3">
-                <a class="my-button sign-up-button " href="">
+                <a class="my-button sign-up-button " [routerLink]="['/sign-up']">
                     <p>Sign up</p>
                 </a>
             </li>
