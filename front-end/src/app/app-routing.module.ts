@@ -6,6 +6,13 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
+      import('./components/initial/initial.module').then(
+        (m) => m.InitialModule
+      ),
+  },
+  {
+    path: 'authentication',
+    loadChildren: () =>
       import('./components/unauthenticated/unauthenticated.module').then(
         (m) => m.UnauthenticatedModule
       ),
