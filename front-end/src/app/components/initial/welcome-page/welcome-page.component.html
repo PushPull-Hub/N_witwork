@@ -1,0 +1,49 @@
+<div fxLayout="column" fxLayoutAlign="start stretch">
+    <div class="scai-backgroung"></div>
+    <ng-container>
+        <div class="c-links unselectable">
+            <li class=" p-2">
+                <a [routerLink]="[ '/welcome-page']">Home</a>
+            </li>
+            <li class=" p-2">
+                <a [routerLink]="[ '/authentication/documentation']">Project</a>
+            </li>
+            <li class=" p-2">
+                <a [routerLink]="[ '/authentication/founder']">Founder</a>
+            </li>
+        </div>
+        <div class="c-icons d-flex unselectable">
+            <ul class="d-flex mb-0">
+                <li class="m-2">
+                    <a [href]="linkedInLink" target="_blank">
+                        <img class="img-icon svg-color" [src]="linkedInIcon">
+                    </a>
+                </li>
+                <li class="m-2">
+                    <a [href]="gitHubLink" target="_blank">
+                        <img class="img-icon svg-color" [src]="gitHubIcon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </ng-container>
+    <div fxLayout="row" class="unselectable">
+        <div class="body">
+            <img class="scai-consulting-logo" [src]="scaiConsultingLogo" alt="Scai_Consulting_Logo ">
+        </div>
+        <div class="c-buttons fixit-on-bottom">
+            <ul class="mx-4 my-5 p-0">
+                <li class="m-3">
+                    <a class="my-button" [routerLink]="['/authentication/sign-in']">
+                        <p>Sign in</p>
+                    </a>
+                </li>
+                <li class="m-3">
+                    <a class="my-button sign-up-button " [routerLink]="['/authentication/sign-up']">
+                        <p>Sign up</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
