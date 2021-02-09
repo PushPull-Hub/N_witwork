@@ -1,0 +1,27 @@
+<ng-container>
+    <div class="c-links unselectable">
+        <li class="p-2">
+            <a [routerLink]="[ '/welcome-page']">Home</a>
+        </li>
+        <li class="p-2">
+            <a [routerLink]="[ '/authentication/documentation']">Project</a>
+        </li>
+        <li class="p-2">
+            <a [routerLink]="[ '/authentication/founder']">Founder</a>
+        </li>
+    </div>
+    <div class="c-icons d-flex unselectable">
+        <ul class="d-flex mb-0">
+            <li class="m-2">
+                <a [href]="linkedInLink" target="_blank">
+                    <img class="img-icon svg-color" [src]="linkedInIcon">
+                </a>
+            </li>
+            <li class="m-2">
+                <a [href]="gitHubLink" target="_blank">
+                    <img class="img-icon svg-color" [src]="gitHubIcon">
+                </a>
+            </li>
+        </ul>
+    </div>
+</ng-container>
