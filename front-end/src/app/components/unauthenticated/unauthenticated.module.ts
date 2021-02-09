@@ -11,6 +11,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { UnauthenticatedWrapperComponent } from './unauthenticated-wrapper.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { UnauthenticatedWrapperComponent } from './unauthenticated-wrapper.compo
     ProjectDocumentationComponent,
     ProjectFounderComponent,
     UnauthenticatedWrapperComponent,
+    NavbarComponent,
   ],
   imports: [CommonModule, UnauthenticatedRoutingModule],
 })
