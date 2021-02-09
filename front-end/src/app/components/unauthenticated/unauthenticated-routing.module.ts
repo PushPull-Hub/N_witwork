@@ -6,15 +6,12 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { UnauthenticatedWrapperComponent } from './unauthenticated-wrapper.component';
-import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'welcome-page', pathMatch: 'full' },
   {
     path: '',
     component: UnauthenticatedWrapperComponent,
     children: [
-      { path: 'welcome-page', component: WelcomePageComponent },
       { path: 'documentation', component: ProjectDocumentationComponent },
       { path: 'founder', component: ProjectFounderComponent },
       { path: 'sign-in', component: SignInComponent },

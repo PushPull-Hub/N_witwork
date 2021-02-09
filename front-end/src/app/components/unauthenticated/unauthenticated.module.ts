@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { UnauthenticatedRoutingModule } from './unauthenticated-routing.module';
 
-import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { ProjectFounderComponent } from './project-founder/project-founder.component';
 import { ProjectDocumentationComponent } from './project-documentation/project-documentation.component';
 
@@ -15,7 +14,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    WelcomePageComponent,
     SignInComponent,
     SignUpComponent,
     ResetPasswordComponent,
