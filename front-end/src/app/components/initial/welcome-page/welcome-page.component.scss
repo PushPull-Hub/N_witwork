@@ -54,26 +54,6 @@
     contrast(105%);
 }
 
-.c-links {
-  display: flex;
-  position: absolute;
-  list-style: none;
-  text-transform: uppercase;
-
-  li {
-    margin: 1rem;
-  }
-
-  li a {
-    color: white;
-  }
-}
-
-.c-icons {
-  float: right;
-  cursor: pointer;
-}
-
 .fixit-on-bottom {
   position: fixed;
   right: 0;
@@ -173,17 +153,6 @@
     bottom: 12.2rem;
   }
 
-  .c-icons > ul {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-  }
-
-  .svg-color {
-    filter: invert(39%) sepia(86%) saturate(820%) hue-rotate(178deg)
-      brightness(85%) contrast(101%);
-  }
-
   .img-icon {
     width: 3rem;
     height: 4rem;
@@ -191,29 +160,6 @@
 }
 
 @media (max-width: 280px) {
-  .c-links {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .c-links li a {
-    font-size: 0.9rem;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .c-icons {
-    float: none;
-    position: absolute;
-    top: 18.5rem;
-    left: 6rem;
-  }
-
-  .c-icons > ul {
-    width: 100%;
-    justify-content: center;
-  }
-
   .body > img {
     height: 25%;
     transform: translate(-50%, 40%);
