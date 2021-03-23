@@ -5,6 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { PostComponent } from './post/post.component';
 import { CreatePostComponent } from './create-post/create-post.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { CreatePostComponent } from './create-post/create-post.component';
     NavbarComponent,
     PostComponent,
     CreatePostComponent,
+    ErrorPageComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -19,6 +21,7 @@ import { CreatePostComponent } from './create-post/create-post.component';
     NavbarComponent,
     PostComponent,
     CreatePostComponent,
+    ErrorPageComponent,
   ],
 })
 export class SharedModule {}
