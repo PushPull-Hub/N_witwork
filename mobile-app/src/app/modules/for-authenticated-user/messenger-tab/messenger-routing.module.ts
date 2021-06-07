@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Tab3Page } from './tab3.page';
+import { MessengerComponent } from './messenger/messenger.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: Tab3Page,
-  }
+    component: MessengerComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class Tab3PageRoutingModule {}
+export class MessengerRoutingModule {}
