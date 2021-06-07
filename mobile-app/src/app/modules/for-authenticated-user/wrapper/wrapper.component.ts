@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  faHome,
+  faUser,
+  faPaperPlane,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-wrapper',
@@ -6,9 +11,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./wrapper.component.scss'],
 })
 export class WrapperComponent implements OnInit {
-
-  constructor() { }
+  homeIcon = faHome;
+  messengerIcon = faPaperPlane;
+  profileIcon = faUser;
+  constructor() {}
 
   ngOnInit() {}
-
 }
