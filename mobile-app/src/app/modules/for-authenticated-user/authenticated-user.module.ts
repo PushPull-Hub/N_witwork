@@ -4,6 +4,8 @@ import { AuthenticatedUserRoutingModule } from './authenticated-user-routing.mod
 import { WrapperComponent } from './wrapper/wrapper.component';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [WrapperComponent],
@@ -13,6 +15,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     CommonModule,
     AuthenticatedUserRoutingModule,
+    FontAwesomeModule,
+    SharedModule,
   ],
 })
 export class AuthenticatedUserModule {}
