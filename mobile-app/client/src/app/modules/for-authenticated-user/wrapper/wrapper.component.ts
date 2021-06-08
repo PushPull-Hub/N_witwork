@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  faHome,
-  faUser,
-  faPaperPlane,
-} from '@fortawesome/free-solid-svg-icons';
+import { TabsConfiguration } from 'src/app/layouts/footer/footer.configurations';
 
 @Component({
   selector: 'app-wrapper',
@@ -11,10 +7,21 @@ import {
   styleUrls: ['./wrapper.component.scss'],
 })
 export class WrapperComponent implements OnInit {
-  homeIcon = faHome;
-  messengerIcon = faPaperPlane;
-  profileIcon = faUser;
+  tabsConfiguration: TabsConfiguration;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.tabsConfiguration = {
+      tabs: [
+        { tabName: 'home', tabLink: 'home', tabIcon: 'homeIcon' },
+        {
+          tabName: 'messenger',
+          tabLink: 'messenger',
+          tabIcon: 'messengerIcon',
+        },
+        { tabName: 'friends', tabLink: 'friends', tabIcon: 'friendsIcon' },
+        { tabName: 'settings', tabLink: 'settings', tabIcon: 'settingsIcon' },
+      ],
+    };
+  }
 }
