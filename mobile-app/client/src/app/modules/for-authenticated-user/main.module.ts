@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthenticatedUserRoutingModule } from './authenticated-user-routing.module';
+import { AuthenticatedUserRoutingModule } from './main-routing.module';
 import { WrapperComponent } from './wrapper/wrapper.component';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';

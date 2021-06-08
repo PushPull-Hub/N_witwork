@@ -15,16 +15,14 @@ const routes: Routes = [
       {
         path: 'messenger',
         loadChildren: () =>
-          import(
-            '../for-authenticated-user/messenger-tab/messenger.module'
-          ).then((m) => m.MessengerModule),
+          import('./messenger-tab/messenger.module').then(
+            (m) => m.MessengerModule
+          ),
       },
       {
         path: 'profile',
         loadChildren: () =>
-          import('../for-authenticated-user/profile-tab/profile.module').then(
-            (m) => m.ProfileModule
-          ),
+          import('./profile-tab/profile.module').then((m) => m.ProfileModule),
       },
       {
         path: '',
