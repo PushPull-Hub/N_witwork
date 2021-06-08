@@ -1,0 +1,491 @@
+{
+  "profiles": {
+    "a": {
+      "email": "john@gmail.com",
+      "password": "123456789",
+      "userId": "1",
+      "pageId": "1"
+    },
+    "ab": {
+      "email": "jane@gmail.com",
+      "password": "123456789",
+      "userId": "2",
+      "pageId": null
+    }
+  },
+  "users": {
+    "1": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "gender": "male",
+      "profilePicture": {
+        "id": "1a",
+        "url": "https://andreatamburelli.it/wp-content/uploads/2021/01/87018c00-694b-11e9-8b5f-c34826306d36.png"
+      },
+      "coverPicture": {
+        "id": "ab",
+        "url": "https://andreatamburelli.it/wp-content/uploads/2021/01/87018c00-694b-11e9-8b5f-c34826306d36.png"
+      },
+      "active": true,
+      "data": {
+        "isPublic": true,
+        "data": {
+          "about": "a new Nwitwork user",
+          "birthday": {
+            "year": 1980,
+            "month": 1,
+            "day": 1
+          },
+          "hometown": "New york",
+          "address": "Blue Spring Lane Levittown, NY 11756",
+          "location": "string",
+          "workIn": {
+            "companyName": "Facebook",
+            "location": "30 Oak Valley Dr.Porterville, CA 93257",
+            "website": null,
+            "isPublic": true
+          },
+          "relationshipStatus": {
+            "id": "123",
+            "status": "taken",
+            "partnerId": "3",
+            "lastUpdate": 123456789,
+            "isPublic": true
+          }
+        }
+      }
+    },
+    "2": {
+      "firstName": "jane",
+      "lastName": "doe",
+      "profilePicture": {
+        "id": "1b",
+        "url": "https://andreatamburelli.it/wp-content/uploads/2021/01/87018c00-694b-11e9-8b5f-c34826306d36.png"
+      },
+      "coverPicture": {
+        "id": "bc",
+        "url": "https://andreatamburelli.it/wp-content/uploads/2021/01/87018c00-694b-11e9-8b5f-c34826306d36.png"
+      },
+      "gender": "female",
+      "active": false,
+      "data": {
+        "isPublic": false,
+        "data": {
+          "about": "a new Nwitwork user",
+          "birthday": {
+            "year": 1980,
+            "month": 1,
+            "day": 1
+          },
+          "hometown": "california, united states of america",
+          "address": "89 NW. Philmont Lane Rancho Cucamonga, CA 91730",
+          "location": "string",
+          "workIn": {
+            "companyName": "Facebook",
+            "location": "30 Oak Valley Dr.Porterville, CA 93257",
+            "website": null
+          },
+          "relationshipStatus": {
+            "id": "1234",
+            "status": "single",
+            "partnerId": null,
+            "lastUpdate": 123456789,
+            "isPublic": false
+          }
+        }
+      }
+    }
+  },
+  "pages": {
+    "1": {
+      "adminId": "1",
+      "name": "demo page",
+      "profilePicture": {
+        "id": "1bc",
+        "url": "https://andreatamburelli.it/wp-content/uploads/2021/01/87018c00-694b-11e9-8b5f-c34826306d36.png"
+      },
+      "coverPicture": {
+        "id": "2bc",
+        "url": "https://andreatamburelli.it/wp-content/uploads/2021/01/87018c00-694b-11e9-8b5f-c34826306d36.png"
+      },
+      "about": "this is a demo page managed by the user id 1 John Doe",
+      "orientation": "will be set later",
+      "data": {
+        "isPublic": true,
+        "data": {
+          "creationDate": 123456789
+        }
+      }
+    }
+  },
+  "posts": {
+    "users": {
+      "1": {
+        "x": {
+          "isPublic": true,
+          "abilities": {
+            "canComment": true,
+            "canShare": true
+          },
+          "data": {
+            "created_time": 123456789,
+            "description": "this is a demo post by john doe",
+            "place": "New York, United States Of America",
+            "body": {
+              "imageUrl": "https://andreatamburelli.it/wp-content/uploads/2021/01/87018c00-694b-11e9-8b5f-c34826306d36.png",
+              "event": null
+            },
+            "likersIds": ["2", "3", "4"]
+          }
+        },
+        "y": {
+          "isPublic": true,
+          "abilities": {
+            "canComment": true,
+            "canShare": true
+          },
+          "data": {
+            "created_time": "123456789",
+            "description": "this is a second demo post by John Doe",
+            "place": "London, United kingdom",
+            "body": {
+              "imageUrl": "https://andreatamburelli.it/wp-content/uploads/2021/01/87018c00-694b-11e9-8b5f-c34826306d36.png",
+              "event": null
+            },
+            "likersIds": ["2", "3", "4"]
+          }
+        }
+      },
+      "2": {
+        "xy": {
+          "isPublic": false,
+          "abilities": {
+            "canComment": true,
+            "canShare": true
+          },
+          "data": {
+            "created_time": 123456789,
+            "description": "this is a demo post by jane doe",
+            "place": "New York, United States Of America",
+            "body": {
+              "imageUrl": "https://andreatamburelli.it/wp-content/uploads/2021/01/87018c00-694b-11e9-8b5f-c34826306d36.png",
+              "event": null
+            },
+            "likersIds": ["2", "3", "4"]
+          }
+        },
+        "yz": {
+          "isPublic": true,
+          "abilities": {
+            "canComment": false,
+            "canShare": false
+          },
+          "data": {
+            "created_time": "123456789",
+            "description": "this is a second demo post by jane Doe",
+            "place": "London, United kingdom",
+            "body": {
+              "imageUrl": "https://andreatamburelli.it/wp-content/uploads/2021/01/87018c00-694b-11e9-8b5f-c34826306d36.png",
+              "event": null
+            },
+            "likersIds": ["2", "3", "4"]
+          }
+        }
+      }
+    },
+    "pages": {
+      "1": {
+        "abcd": {
+          "isPublic": true,
+          "abilities": {
+            "canComment": true,
+            "canShare": true
+          },
+          "data": {
+            "created_time": 123456789,
+            "description": "this is a demo post by john doe page ",
+            "place": "New York, United States Of America",
+            "body": {
+              "imageUrl": "https://andreatamburelli.it/wp-content/uploads/2021/01/87018c00-694b-11e9-8b5f-c34826306d36.png",
+              "event": null
+            },
+            "likersIds": ["1", "2", "3", "4"]
+          }
+        },
+        "efgh": {
+          "isPublic": true,
+          "abilities": {
+            "canComment": true,
+            "canShare": true
+          },
+          "data": {
+            "created_time": 123456789,
+            "description": "this is a second demo post by john doe page",
+            "place": "New York, United States Of America",
+            "body": {
+              "imageUrl": "https://andreatamburelli.it/wp-content/uploads/2021/01/87018c00-694b-11e9-8b5f-c34826306d36.png",
+              "event": null
+            },
+            "likersIds": ["1", "2", "3", "4"]
+          }
+        }
+      }
+    }
+  },
+
+  "comments": {
+    "post": {
+      "user": {
+        "1": {
+          "x": [
+            {
+              "id": "1",
+              "canReply": true,
+              "createdTime": 123456789,
+              "comment": "this is a demo comment from jane in John's post.",
+              "commenterId": "2",
+              "likersIds": ["1", "2", "3"]
+            },
+            {
+              "id": "2",
+              "createdTime": 1234567899,
+              "canReply": false,
+              "comment": "this is a second demo comment from jane in John's post.",
+              "commenterId": "2",
+              "likersIds": ["1", "2", "3"]
+            }
+          ],
+          "y": null
+        },
+        "2": {
+          "xy": null,
+          "yz": null
+        }
+      },
+      "page": {
+        "1": {
+          "abcd": [
+            {
+              "id": "1",
+              "canReply": true,
+              "createdTime": 123456789,
+              "comment": "this is a demo comment from jane in John's page post.",
+              "commenterId": "2",
+              "likersIds": ["1", "2", "3"]
+            }
+          ],
+          "efgh": null
+        }
+      }
+    },
+    "profilePicture": {
+      "user": {
+        "1": {
+          "1a": [
+            {
+              "id": "1",
+              "canReply": true,
+              "createdTime": 123456789,
+              "comment": "hey John I liked your profile picture",
+              "commenterId": "2",
+              "likersIds": ["1"]
+            },
+            {
+              "id": "2",
+              "canReply": false,
+              "createdTime": 123456789,
+              "comment": "it's really amazing",
+              "commenterId": "2",
+              "likersIds": ["1"]
+            }
+          ]
+        },
+        "2": {
+          "1b": null
+        }
+      },
+      "page": {
+        "1": {
+          "1bc": null
+        }
+      }
+    },
+    "coverPicture": {
+      "user": {
+        "1": {
+          "1a": null,
+          "ab": null
+        },
+        "2": {
+          "1b": null,
+          "bc": null
+        }
+      },
+      "page": {
+        "1": {
+          "2bc": null
+        }
+      }
+    },
+    "relationshipStatus": {
+      "user": {
+        "1": {
+          "123": {
+            "id": "2",
+            "createdTime": 1234567899,
+            "canReply": false,
+            "comment": "congratulations.",
+            "commenterId": "2",
+            "likersIds": ["1"]
+          }
+        },
+        "2": {
+          "1234": null
+        }
+      }
+    }
+  },
+
+  "relations": {
+    "1": {
+      "friends": [
+        {
+          "id": "1",
+          "friendId": "2"
+        },
+        {
+          "id": "2",
+          "friendId": "3"
+        },
+        {
+          "id": "3",
+          "friendId": "4"
+        }
+      ],
+      "pendingRequests": [
+        {
+          "id": "1",
+          "receiverId": "5"
+        },
+        {
+          "id": "2",
+          "receiverId": "6"
+        },
+        {
+          "id": "1",
+          "receiverId": "7"
+        }
+      ],
+      "declinedRequests": [
+        {
+          "id": "1",
+          "declinerId": "8"
+        },
+        {
+          "id": "2",
+          "declinerId": "9"
+        },
+        {
+          "id": "1",
+          "declinerId": "10"
+        }
+      ],
+      "blockedMe": [
+        {
+          "id": "1",
+          "blockerId": "11"
+        },
+        {
+          "id": "2",
+          "blockerId": "12"
+        }
+      ],
+      "blockedByMe": [
+        {
+          "id": "1",
+          "blockedId": "13"
+        }
+      ],
+      "requests": [
+        {
+          "id": "1",
+          "recruiterId": "14"
+        }
+      ]
+    },
+    "2": {
+      "friends": null,
+      "pendingRequests": null,
+      "declinedRequests": null,
+      "blockedMe": null,
+      "blockedByMe": null,
+      "requests": null
+    }
+  },
+
+  "conversations": {
+    "users": {
+      "a": {
+        "firstUserId": "1",
+        "secondUserId": "2",
+        "isLastMessageSeen": false,
+        "lastMessage": {
+          "id": "abcd",
+          "createdTime": 123456789,
+          "senderId": 2,
+          "receiverId": 1,
+          "text": "this is message from user id 2 to user id 1 and that's the last message for this moment",
+          "body": "any",
+          "isSeen": false
+        }
+      }
+    },
+    "groups": {
+      "id": "a",
+      "firstUserId": "1",
+      "secondUserId": "2",
+      "isLastMessageSeen": false,
+      "lastMessage": {
+        "id": "abcd",
+        "createdTime": 123456789,
+        "senderId": 2,
+        "receiverId": 1,
+        "text": "this is message from user id 2 to user id 1 and that's the last message for this moment",
+        "body": "any",
+        "isSeen": false
+      },
+      "messages": []
+    }
+  },
+  "messages": {
+    "a": [
+      {
+        "id": "ab",
+        "createdTime": 123456789,
+        "senderId": 1,
+        "receiverId": 2,
+        "text": "this is a demo message from user id 1 to user id 2",
+        "body": "any",
+        "isSeen": true
+      },
+      {
+        "id": "abc",
+        "createdTime": 123456789,
+        "senderId": 1,
+        "receiverId": 2,
+        "text": "this is the second demo message from user id 1 to user id 2",
+        "body": "any",
+        "isSeen": true
+      },
+      {
+        "id": "abcd",
+        "createdTime": 123456789,
+        "senderId": 2,
+        "receiverId": 1,
+        "text": "this is message from user id 2 to user id 1 and that's the last message for this moment",
+        "body": "any",
+        "isSeen": false
+      }
+    ]
+  }
+}
