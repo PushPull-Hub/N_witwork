@@ -1,0 +1,9 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ng-container *ngFor="let tab of tabsConfiguration.tabs">
+      <ion-tab-button [tab]="tab.tabLink">
+        <fa-icon [icon]="importedIcons[tab.tabIcon]" size="2x"></fa-icon>
+      </ion-tab-button>
+    </ng-container>
+  </ion-tab-bar>
+</ion-tabs>
