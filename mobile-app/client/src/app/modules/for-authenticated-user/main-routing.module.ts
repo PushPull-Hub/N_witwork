@@ -20,6 +20,18 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'friends',
+        loadChildren: () =>
+          import('./friends-tab/friends.module').then((m) => m.FriendsModule),
+      },
+      {
+        path: 'settings',
+        loadChildren: () =>
+          import('./settings-tab/settings.module').then(
+            (m) => m.SettingsModule
+          ),
+      },
+      {
         path: 'profile',
         loadChildren: () =>
           import('./profile-tab/profile.module').then((m) => m.ProfileModule),
