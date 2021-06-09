@@ -1,0 +1,15 @@
+{
+  "name": "nwitwork-server",
+  "version": "1.0.0",
+  "description": "the backend side of nwitwork app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hamza Dahhani",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
