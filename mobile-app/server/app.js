@@ -8,14 +8,8 @@ const response = {
 
 app.use((request, response, next) => {
   response.setHeader('Access-Control-Allow-Origin', '*');
-  response.setHeader(
-    'Access-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content-Type, Accept, Authorization'
-  );
-  response.setHeader(
-    'Access-Control-Allow-Methods',
-    'GET, POST, PATCH, PUT, DELETE, OPTIONS'
-  );
+  response.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+  response.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, PUT, DELETE, OPTIONS');
   next();
 });
 
