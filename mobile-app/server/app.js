@@ -1,20 +1,16 @@
 const express = require('express');
 const app = express();
 
-const response = {
-  1: 'Hello',
-  2: "it's me ",
-};
+const routesOf = require('./routes/index')
+const serviceOf = require('./services/index')
 
-app.use((request, response, next) => {
-  response.setHeader('Access-Control-Allow-Origin', '*');
-  response.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-  response.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, PUT, DELETE, OPTIONS');
-  next();
-});
 
-app.use((req, res, next) => {
-  res.json(response);
-});
+app.use(serviceOf.app.setHeaders);
+
+app.use('/test', routesOf.test);
+app.use('/profile', routesOf.profile)
+app.use('/user', routesOf.user)
+
+app.use('', serviceOf.app.replyWith404);
 
 module.exports = app;
