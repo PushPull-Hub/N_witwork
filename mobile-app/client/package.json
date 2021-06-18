@@ -8,8 +8,11 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "lint": "npm run eslint && npm run prettier -- --check",
+    "fmt": "npm run eslint -- --fix && npm run prettier -- --write",
+    "prettier": "prettier \"**/*.ts\"",
+    "eslint": "eslint . --ext .ts"
   },
   "private": true,
   "dependencies": {
@@ -40,12 +43,14 @@
     "@angular/language-service": "~12.0.1",
     "@capacitor/cli": "3.0.0",
     "@ionic/angular-toolkit": "^4.0.0",
+    "@ionic/eslint-config": "^0.3.0",
+    "@ionic/prettier-config": "^1.0.1",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "4.16.1",
     "@typescript-eslint/parser": "4.16.1",
-    "eslint": "^7.6.0",
+    "eslint": "^7.28.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
     "eslint-plugin-prefer-arrow": "1.2.2",
@@ -61,5 +66,9 @@
     "ts-node": "~8.3.0",
     "typescript": "~4.2.4"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "eslintConfig": {
+    "extends": "@ionic/eslint-config/recommended"
+  },
+  "prettier": "@ionic/prettier-config"
 }
